@@ -69,6 +69,23 @@ public class Main {
                     return "";
                 }
         );
+
+        Spark.put(
+                "/edit-message",
+                (request, response) -> {
+                    //update message in database
+                    //same as /add-message but last line calls edit-message method
+                    return"";
+                }
+        );
+
+        Spark.delete(
+                "/delete-message",
+                (request, response) -> {
+                    //just need id
+                    return "";
+                }
+        );
     }
 
 
